@@ -212,11 +212,11 @@ a{text-decoration:none;color:inherit}
 }
 .hero-ctas{display:flex;flex-direction:column;gap:0}
 .hero-assess{
-  margin-top:20px;
-  padding:18px 22px;
-  border:1px solid rgba(196,77,30,.22);
-  background:rgba(196,77,30,.06);
-  max-width:420px;position:relative;
+  margin-top:28px;
+  padding:24px 28px;
+  border:1px solid rgba(196,77,30,.35);
+  background:rgba(196,77,30,.1);
+  max-width:480px;position:relative;
 }
 .hero-assess::before{
   content:"";position:absolute;top:0;left:0;
@@ -228,15 +228,15 @@ a{text-decoration:none;color:inherit}
 }
 .hero-assess-link{
   font-family:var(--serif);font-style:italic;font-weight:600;
-  font-size:clamp(18px,2vw,24px);
+  font-size:clamp(22px,2.5vw,30px);
   color:#fff;
   border-bottom:1px solid rgba(255,255,255,.4);
   transition:color .2s,border-color .2s;
 }
 .hero-assess-link:hover{color:var(--ember2);border-color:rgba(196,77,30,.5)}
 .hero-assess-sub{
-  display:block;font-size:13px;color:rgba(240,237,232,.65);
-  line-height:1.5;margin-top:8px;
+  display:block;font-size:15px;color:rgba(240,237,232,.75);
+  line-height:1.5;margin-top:10px;
 }
 
 /* Stats strip */
@@ -280,21 +280,22 @@ a{text-decoration:none;color:inherit}
   background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.04);
   margin-bottom:60px;
 }
-.rf-card{background:var(--ink3);padding:44px 34px;position:relative;overflow:hidden;transition:background .3s}
-.rf-card:hover{background:#142040}
+.rf-card{background:#1C2E45;padding:48px 38px;position:relative;overflow:hidden;transition:background .3s;border:1px solid rgba(255,255,255,.09)}
+.rf-card:hover{background:#223550}
 .rf-card::after{
   content:"";position:absolute;bottom:0;left:0;width:0;height:2px;
   background:linear-gradient(90deg,var(--cyan),var(--crimson));
   transition:width .5s ease;
 }
 .rf-card:hover::after{width:100%}
-.rf-n{font-family:var(--serif);font-size:68px;font-weight:700;color:rgba(232,25,60,.22);line-height:1;margin-bottom:18px;display:block}
-.rf-h{font-size:17px;font-weight:600;color:var(--warm);margin-bottom:12px;line-height:1.4}
-.rf-p{font-size:17px;line-height:1.85;color:var(--muted2)}
+.rf-n{font-family:var(--serif);font-size:72px;font-weight:700;color:rgba(232,25,60,.55);line-height:1;margin-bottom:18px;display:block}
+.rf-h{font-size:20px;font-weight:700;color:var(--warm);margin-bottom:14px;line-height:1.35}
+.rf-p{font-size:18px;line-height:1.85;color:rgba(170,185,205,.85)}
 .rf-coda{
   font-family:var(--serif);font-style:italic;
-  font-size:clamp(18px,2vw,25px);color:var(--warm);line-height:1.65;
-  padding-top:52px;border-top:1px solid rgba(255,255,255,.06);max-width:720px;
+  font-size:clamp(24px,3vw,36px);color:var(--warm);line-height:1.25;
+  padding-top:56px;border-top:1px solid rgba(255,255,255,.1);max-width:none;
+  white-space:nowrap;
 }
 .rf-coda strong{font-style:normal;color:var(--cyan)}
 
@@ -307,16 +308,16 @@ a{text-decoration:none;color:inherit}
   background:linear-gradient(90deg,var(--cyan) 0%,var(--crimson) 45%,transparent 100%);
 }
 .dv-hl{color:var(--navy);max-width:760px;margin-bottom:64px}
-.dv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(0,0,0,.07)}
-.dv-card{background:var(--cream2);padding:44px 32px;position:relative;overflow:hidden;transition:background .25s,transform .25s}
-.dv-card:hover{background:#fff;transform:translateY(-3px)}
+.dv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;background:rgba(0,0,0,.12)}
+.dv-card{background:#D8D4CC;padding:48px 36px;position:relative;overflow:hidden;transition:background .25s,transform .25s}
+.dv-card:hover{background:#ffffff;transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.12)}
 .dv-card::before{content:"";position:absolute;top:0;left:0;width:3px;height:0;transition:height .4s ease}
 .dv-card:nth-child(odd)::before{background:var(--amber)}
 .dv-card:nth-child(even)::before{background:var(--cyan)}
 .dv-card:hover::before{height:100%}
-.dv-n{font-family:var(--serif);font-size:56px;font-weight:700;color:rgba(0,0,0,.06);line-height:1;margin-bottom:18px}
-.dv-h{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--navy);margin-bottom:12px}
-.dv-p{font-size:17px;line-height:1.8;color:var(--charcoal)}
+.dv-n{font-family:var(--serif);font-size:60px;font-weight:700;color:rgba(0,0,0,.18);line-height:1;margin-bottom:18px}
+.dv-h{font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1.4px;color:var(--navy);margin-bottom:14px}
+.dv-p{font-size:18px;line-height:1.85;color:#2A2A2A}
 
 /* ============================================================
    PHOTO SPLIT
@@ -620,24 +621,24 @@ a{text-decoration:none;color:inherit}
   color:rgba(13,204,204,.018);pointer-events:none;white-space:nowrap;
 }
 .iv-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:start}
-.iv-lhl{
+.iv-lhl{font-size:clamp(26px,3vw,38px);
   font-family:var(--serif);font-size:clamp(26px,3.2vw,42px);font-weight:700;
   color:var(--warm);max-width:440px;line-height:1.15;margin-bottom:32px;
 }
-.iv-lp{font-size:18px;line-height:1.85;color:var(--muted2);max-width:440px;margin-bottom:20px}
+.iv-lp{font-size:20px;line-height:1.9;color:var(--muted2);max-width:480px;margin-bottom:24px}
 .iv-lp strong{color:var(--warm);font-weight:500}
 .iv-card{background:var(--ink3);border:1px solid rgba(13,204,204,.2);position:relative;overflow:hidden}
 .iv-card::before{
   content:"";position:absolute;top:0;left:0;right:0;height:3px;
   background:linear-gradient(90deg,var(--cyan) 0%,var(--crimson) 50%,var(--crimson2) 100%);
 }
-.iv-body{padding:52px 48px}
+.iv-body{padding:60px 56px}
 .iv-prod{font-size:12px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
 .iv-invest-lbl{font-family:var(--serif);font-size:clamp(13px,1.2vw,16px);font-weight:400;font-style:italic;color:var(--muted2);margin-bottom:12px;letter-spacing:.5px}
-.iv-price{font-family:var(--serif);font-size:76px;font-weight:700;color:var(--crimson);line-height:1;margin-bottom:4px}
-.iv-per{font-family:var(--serif);font-style:italic;font-size:16px;color:var(--muted);margin-bottom:6px}
-.iv-alt{font-size:15px;color:var(--muted2);padding-bottom:36px;margin-bottom:36px;border-bottom:1px solid rgba(255,255,255,.06)}
-.iv-note{font-size:14px;line-height:1.7;color:var(--muted);margin-top:20px}
+.iv-price{font-family:var(--serif);font-size:96px;font-weight:700;color:var(--crimson);line-height:1;margin-bottom:8px}
+.iv-per{font-family:var(--serif);font-style:italic;font-size:19px;color:var(--muted);margin-bottom:8px}
+.iv-alt{font-size:18px;color:var(--muted2);padding-bottom:36px;margin-bottom:36px;border-bottom:1px solid rgba(255,255,255,.06)}
+.iv-note{font-size:16px;line-height:1.75;color:var(--muted);margin-top:24px}
 .iv-note b{color:var(--cyan);font-weight:500}
 
 /* ============================================================
@@ -691,8 +692,72 @@ a{text-decoration:none;color:inherit}
   .pr-track{grid-template-columns:1fr 1fr;gap:36px}.pr-line{display:none}
 }
 @media(max-width:600px){
-  .flip-grid{grid-template-columns:1fr}
-  .flip-wrap{height:200px}
+  /* Force single column — !important needed because desktop rule loads after */
+  .flip-grid{grid-template-columns:1fr !important;gap:12px !important}
+
+  /* Kill 3D entirely — use slide reveal instead */
+  .flip-wrap{height:auto !important;perspective:none !important;min-height:0;cursor:pointer}
+  .flip-inner{transform-style:flat !important;transition:none !important;position:relative !important;height:auto !important;transform:none !important}
+  .flip-wrap:hover .flip-inner,.flip-wrap.flipped .flip-inner{transform:none !important}
+
+  /* Both sides stack vertically, no 3D */
+  .flip-front,.flip-back{
+    position:relative !important;
+    backface-visibility:visible !important;
+    -webkit-backface-visibility:visible !important;
+    transform:none !important;
+    padding:24px 20px !important;
+  }
+
+  /* Front: visible by default */
+  .flip-front{
+    display:flex !important;
+    flex-direction:column !important;
+    max-height:300px;
+    overflow:hidden;
+    opacity:1;
+    transition:max-height .35s ease, opacity .25s ease, padding .3s ease;
+  }
+  /* Back: hidden by default */
+  .flip-back{
+    display:flex !important;
+    flex-direction:column !important;
+    max-height:0 !important;
+    overflow:hidden !important;
+    opacity:0;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+    transition:max-height .4s ease .05s, opacity .3s ease .1s, padding .3s ease;
+  }
+
+  /* Flipped state */
+  .flip-wrap.flipped .flip-front{
+    max-height:0 !important;
+    opacity:0 !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+  }
+  .flip-wrap.flipped .flip-back{
+    max-height:300px !important;
+    opacity:1 !important;
+    padding-top:24px !important;
+    padding-bottom:24px !important;
+  }
+
+  /* Front text */
+  .flip-fn{font-size:36px !important;opacity:1;color:rgba(13,204,204,.12) !important}
+  .flip-fl{font-size:10px !important;letter-spacing:1.5px}
+  .flip-ft{font-size:15px !important;overflow-wrap:break-word;word-break:break-word}
+
+  /* Back text — "After the Intensive" on one line */
+  .flip-bl{font-size:10px !important;letter-spacing:1.5px;white-space:nowrap !important;margin-bottom:10px;display:block}
+  .flip-bt{font-size:16px !important;overflow-wrap:break-word;word-break:break-word;line-height:1.5}
+  .flip-bn{display:none !important}
+
+  /* Tap hint */
+  .flip-hint{display:none !important}
+  .flip-front::after{content:"Tap to reveal →";position:absolute;bottom:12px;right:14px;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(180,210,240,.4);pointer-events:none}
+  .flip-wrap.flipped .flip-front::after{display:none}
 
   :root{--gutter:20px}
   .hero-nav-row{height:68px}
@@ -706,6 +771,93 @@ a{text-decoration:none;color:inherit}
   .cta{padding:17px 28px;font-size:14px}
   .stick-txt{display:none}
   #iv::after{display:none}
+
+  /* ── MOBILE-ONLY IMPROVEMENTS ─────────────────── */
+
+  /* Hero: prevent overflow, better sizing */
+  .hero-h1{font-size:clamp(36px,9vw,52px);letter-spacing:-.2px}
+  .hero-p{font-size:16px}
+  .hero-sub{font-size:15px}
+  .hero-assess{max-width:100%}
+  .hero-assess-link{font-size:clamp(18px,5vw,22px)}
+
+  /* Hero stats: tighten */
+  .h-stat-n{font-size:34px}
+  .h-stat-l{font-size:13px}
+  .h-stat{padding:18px 12px;text-align:center}
+
+  /* RF section: allow coda to wrap */
+  .rf-coda{white-space:normal !important;font-size:clamp(19px,5vw,24px);line-height:1.4}
+  .rf-h{font-size:18px}
+  .rf-p{font-size:16px}
+  .rf-n{font-size:52px;color:rgba(232,25,60,.75) !important}
+  .rf-card{background:#243650 !important;border:1px solid rgba(255,255,255,.18) !important;box-shadow:0 4px 24px rgba(0,0,0,.35)}
+  .rf-card{padding:36px 24px}
+
+  /* Section headings: scale down */
+  .section-hl{font-size:clamp(24px,6vw,34px)}
+  .section-hl br{display:none}
+
+  /* DV cards: comfortable on mobile */
+  .dv-card{padding:36px 22px}
+  .dv-p{font-size:16px}
+
+  /* Funnel: horizontal row on mobile, compact */
+  .funnel-row{flex-direction:row;gap:0;align-items:flex-start;justify-content:space-between;width:100%}
+  .funnel-step{flex-direction:column;align-items:center;gap:0;text-align:center;flex:1;padding:8px 2px;position:relative}
+  .funnel-step::after{display:block;top:18px;height:2px;width:calc(100% - 4px);left:50%}
+  .funnel-step::before{display:none}
+  .funnel-step:first-child::before{display:none}
+  .funnel-icon{width:32px;height:32px;font-size:12px;margin-bottom:6px;flex-shrink:0}
+  .funnel-lbl{font-size:9px;letter-spacing:1px;margin-top:2px;line-height:1.2}
+  /* Swoosh: shorter on mobile to match headline */
+  .swoosh{width:min(200px,65%) !important}
+
+  /* Who section: stack columns vertically */
+  .who-cols{grid-template-columns:1fr}
+  .yes-head,.no-head{padding:18px 22px;font-size:16px}
+  .yes-item,.no-item{padding:14px 22px}
+  .yes-txt,.no-txt{font-size:15px}
+  .who-bottom{padding:22px 20px}
+  .who-bottom-txt{font-size:clamp(15px,4vw,19px)}
+
+  /* UG urgency cells */
+  .ug-t{font-size:16px}
+  .ug-h{font-size:12px}
+  .urgency-bar{flex-direction:column;gap:10px;padding:14px 18px}
+
+  /* Investment: sensible mobile sizing */
+  .iv-lhl{font-size:clamp(20px,5.5vw,26px)}
+  .iv-lp{font-size:16px}
+  .iv-price{font-size:48px !important}
+  .iv-alt{font-size:15px}
+  .iv-note{font-size:14px}
+  .iv-per{font-size:16px}
+  .iv-body{padding:30px 22px !important}
+
+  /* Pullquote: readable size */
+  .pb-quote{font-size:clamp(18px,5vw,26px)}
+  #pb{height:auto;min-height:320px;padding:56px 20px}
+  .pb-inner{padding:0}
+
+  /* Mid CTA */
+  .mid-cta-head{font-size:clamp(18px,5vw,24px)}
+  .mid-cta-sub{font-size:13px}
+
+  /* Trust row: 2-up layout */
+  .trust-row{gap:16px 24px}
+  .trust-item{font-size:12px;letter-spacing:.3px}
+
+  /* Assess modal: comfortable on phone */
+  .assess-box{padding:48px 20px 32px}
+  .assess-hl{font-size:clamp(20px,5.5vw,26px)}
+  .assess-amt{font-size:42px}
+  .assess-sub{font-size:15px}
+  .assess-price{flex-direction:column;gap:4px;align-items:flex-start}
+
+  /* Float CTA: bigger tap target */
+  #float-cta{padding:14px 16px}
+  #float-cta a{padding:14px 20px;font-size:13px;letter-spacing:1.5px}
 }
 
 /* ── TRANSFORMATION: FLIP CARDS ── */
@@ -728,14 +880,15 @@ a{text-decoration:none;color:inherit}
   display:flex;flex-direction:column;justify-content:flex-end;padding:28px 24px;
 }
 .flip-front{
-  background:linear-gradient(135deg,#0D1F2D 0%,#0A1828 100%);
-  border:1px solid rgba(255,255,255,.09);
-  border-top:2px solid rgba(13,204,204,.35);
+  background:linear-gradient(135deg,#1A3050 0%,#142540 100%);
+  border:1px solid rgba(255,255,255,.15);
+  border-top:3px solid rgba(13,204,204,.65);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.06);
 }
-.flip-fn{font-family:var(--serif);font-size:64px;font-weight:700;color:rgba(13,204,204,.18);line-height:1;position:absolute;top:16px;left:20px}
-.flip-fl{font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--cyan);margin-bottom:12px}
-.flip-ft{font-size:15px;line-height:1.55;color:rgba(240,237,232,.85)}
-.flip-hint{position:absolute;bottom:14px;right:16px;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(122,128,144,.35)}
+.flip-fn{font-family:var(--serif);font-size:64px;font-weight:700;color:rgba(13,204,204,.35);line-height:1;position:absolute;top:16px;left:20px}
+.flip-fl{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:10px;opacity:.9}
+.flip-ft{font-size:16px;line-height:1.6;color:rgba(240,237,232,.95)}
+.flip-hint{position:absolute;bottom:14px;right:16px;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(180,210,240,.4)}
 .flip-wrap:hover .flip-hint{opacity:0;transition:opacity .15s}
 
 .flip-back{
@@ -993,6 +1146,88 @@ section + section::before{
   font-size:14px;color:var(--muted);margin-top:16px;
 }
 
+
+/* ── ASSESS MODAL ─────────────────────────────────── */
+#assessModal{
+  display:none;position:fixed;inset:0;z-index:9999;
+  align-items:flex-start;justify-content:center;
+  background:rgba(10,22,40,.92);backdrop-filter:blur(8px);
+  padding:16px;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.assess-box{
+  background:var(--ink2);
+  border:1px solid rgba(196,77,30,.4);
+  border-top:4px solid var(--ember);
+  max-width:560px;width:100%;
+  padding:52px 48px;
+  position:relative;
+  box-shadow:0 32px 80px rgba(0,0,0,.5);
+  margin:auto;
+}
+.assess-close{
+  position:absolute;top:14px;right:14px;
+  font-size:20px;color:rgba(255,255,255,.6);
+  cursor:pointer;background:rgba(255,255,255,.1);border:none;
+  border-radius:50%;
+  width:40px;height:40px;
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s,color .2s;
+  line-height:1;
+  /* Large tap target */
+  -webkit-tap-highlight-color:transparent;
+  touch-action:manipulation;
+}
+.assess-close:hover,.assess-close:active{background:rgba(255,255,255,.25);color:#fff}
+.assess-eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--ember2);margin-bottom:16px;display:block;
+}
+.assess-hl{
+  font-family:var(--serif);font-size:clamp(26px,4vw,34px);
+  font-weight:700;color:var(--warm);line-height:1.2;margin-bottom:16px;
+}
+.assess-sub{
+  font-size:17px;line-height:1.75;color:var(--muted2);margin-bottom:32px;
+}
+.assess-price{
+  display:flex;align-items:baseline;gap:10px;margin-bottom:28px;
+}
+.assess-amt{
+  font-family:var(--serif);font-size:56px;font-weight:700;
+  color:var(--amber);line-height:1;
+}
+.assess-label{
+  font-size:16px;color:var(--muted2);line-height:1.4;
+}
+.assess-cta{
+  display:block;text-align:center;width:100%;
+  background:var(--ember);color:#fff;
+  font-family:var(--sans);font-size:14px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:20px 32px;border:none;cursor:pointer;
+  text-decoration:none;
+  transition:background .2s;
+  touch-action:manipulation;
+}
+.assess-cta:hover{background:var(--ember2)}
+.assess-fine{
+  font-size:13px;color:var(--muted);text-align:center;
+  margin-top:16px;line-height:1.5;
+}
+
+/* ── MOBILE CARD CONTRAST — must be last to override desktop rules ── */
+@media(max-width:600px){
+  /* RF cards: clearly visible against dark section bg */
+  .rf-card{background:#2A3F58 !important;border:1px solid rgba(255,255,255,.22) !important;box-shadow:0 4px 20px rgba(0,0,0,.4) !important}
+  /* Who section yes/no columns: clearly visible */
+  .who-cols{border:1px solid rgba(255,255,255,.2) !important}
+  .yes-col{background:linear-gradient(160deg,rgba(13,204,204,.18) 0%,rgba(13,204,204,.09) 100%) !important}
+  .no-col{background:linear-gradient(160deg,rgba(196,77,30,.2) 0%,rgba(196,77,30,.1) 100%) !important}
+  .yes-head{background:rgba(13,204,204,.14) !important}
+  .no-head{background:rgba(196,77,30,.16) !important}
+}
 </style>
 </head>
 <body>
@@ -1056,7 +1291,7 @@ section + section::before{
           <a href="https://girlfridaybusinesssolutions.services/checkout-page" class="cta">Reserve My Spot — Only 10 Available</a>
           <div class="hero-assess">
             <span class="hero-assess-top">Not ready to commit yet?</span>
-            <a href="#" class="hero-assess-link">Take the $27 Profit Gap Assessment &rarr;</a>
+            <a href="javascript:void(0)" class="hero-assess-link" onclick="document.getElementById('assessModal').style.display='flex'">Take the $27 Profit Gap Assessment &rarr;</a>
             <span class="hero-assess-sub">Find out exactly where your biggest revenue opportunity is hiding.</span>
           </div>
         </div>
@@ -1299,7 +1534,7 @@ section + section::before{
             <div class="iv-price">$3,500</div>
             <div class="iv-per">Full pay</div>
             <div class="iv-alt">or 2 payments of $1,875</div>
-            <a href="https://girlfridaybusinesssolutions.services/checkout-page" class="cta" style="display:block;text-align:center;width:100%">Reserve My Spot — 10 Spots This Quarter</a>
+            <a href="https://girlfridaybusinesssolutions.services/checkout-page" class="cta" style="display:block;text-align:center;width:100%;font-size:16px;padding:24px 40px;letter-spacing:2.5px">Reserve My Spot — 10 Spots This Quarter</a>
             <p class="iv-note">Spots limited to <b>10 per quarter</b> to ensure every client receives Takisha's direct focus and attention.</p>
           </div>
         </div>
@@ -1418,12 +1653,15 @@ section + section::before{
     w.addEventListener('keypress',function(e){if(e.key==='Enter'||e.key===' ')this.classList.toggle('flipped')});
   });
 
-  // Auto-demo flip cards once on load so visitor sees the magic
-  setTimeout(function(){
-    var wraps=document.querySelectorAll('.flip-wrap');
-    wraps.forEach(function(w,i){setTimeout(function(){w.classList.add('flipped')},i*130)});
-    setTimeout(function(){wraps.forEach(function(w){w.classList.remove('flipped')})},2400);
-  },1200);
+  // Auto-demo flip cards on desktop only (touch devices use slide-reveal, skip jank)
+  var isTouch=('ontouchstart' in window)||(navigator.maxTouchPoints>0);
+  if(!isTouch){
+    setTimeout(function(){
+      var wraps=document.querySelectorAll('.flip-wrap');
+      wraps.forEach(function(w,i){setTimeout(function(){w.classList.add('flipped')},i*130)});
+      setTimeout(function(){wraps.forEach(function(w){w.classList.remove('flipped')})},2400);
+    },1200);
+  }
 
   // YES spotlight — stagger in via IntersectionObserver
   var yesObs=new IntersectionObserver(function(entries){
@@ -1440,6 +1678,69 @@ section + section::before{
   var yc=document.querySelector('.yes-col');
   if(yc)yesObs.observe(yc);
 
+})();
+</script>
+
+<!-- ── ASSESS MODAL ── -->
+<div id="assessModal">
+  <div class="assess-box">
+    <button class="assess-close" aria-label="Close">&times;</button>
+    <span class="assess-eyebrow">Quick Win — Before You Commit</span>
+    <h2 class="assess-hl">Find where your biggest revenue opportunity is hiding.</h2>
+    <p class="assess-sub">The $27 Profit Gap Assessment gives you a clear, prioritized map of the revenue gaps in your current business — in under an hour. Most clients recover the cost in their first week.</p>
+    <div class="assess-price">
+      <span class="assess-amt">$27</span>
+      <span class="assess-label">One-time · Instant access<br>Full refund if it doesn't deliver</span>
+    </div>
+    <a href="#" class="assess-cta">Get the Profit Gap Assessment &rarr;</a>
+    <p class="assess-fine">Not ready for the full Intensive yet? Start here. Most who take the assessment come back.</p>
+  </div>
+</div>
+
+<script>
+// Modal open/close with body scroll lock
+function openAssessModal(){
+  var m=document.getElementById('assessModal');
+  m.style.display='flex';
+  document.body.style.overflow='hidden';
+  // Scroll modal back to top each time it opens
+  m.scrollTop=0;
+}
+function closeAssessModal(){
+  document.getElementById('assessModal').style.display='none';
+  document.body.style.overflow='';
+}
+
+// Wire up all open triggers
+document.querySelectorAll('[onclick*="assessModal"]').forEach(function(el){
+  el.removeAttribute('onclick');
+  el.addEventListener('click',function(e){e.preventDefault();openAssessModal();});
+});
+
+// Wire up all close triggers
+document.querySelectorAll('.assess-close').forEach(function(el){
+  el.removeAttribute('onclick');
+  el.addEventListener('click',function(e){e.stopPropagation();closeAssessModal();});
+});
+
+// Tap backdrop to close (but not the box itself)
+document.getElementById('assessModal').addEventListener('click',function(e){
+  if(e.target===this) closeAssessModal();
+});
+
+// Close on Escape key
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeAssessModal();
+});
+
+// Auto-show after 10 seconds (once per session, desktop only to avoid mobile annoyance)
+(function(){
+  if(!sessionStorage.getItem('assessShown')){
+    setTimeout(function(){
+      openAssessModal();
+      sessionStorage.setItem('assessShown','1');
+    }, 10000);
+  }
 })();
 </script>
 </body>
