@@ -675,8 +675,10 @@ a{text-decoration:none;color:inherit}
 @media(max-width:960px){
   .pf-cards{grid-template-columns:1fr}
 
-  .flip-grid{grid-template-columns:1fr 1fr}
-  .flip-wrap,.flip-wrap:nth-child(4),.flip-wrap:nth-child(5){grid-column:auto}
+  .flip-grid{grid-template-columns:1fr 1fr !important}
+  .flip-wrap,
+  .flip-wrap:nth-child(4),
+  .flip-wrap:nth-child(5){grid-column:auto !important}
   .who-cols{grid-template-columns:1fr}
   .who-bottom{flex-direction:column;align-items:flex-start}
 
@@ -695,12 +697,9 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){
   /* Force single column — !important needed because desktop rule loads after */
   .flip-grid{grid-template-columns:1fr !important;gap:12px !important}
-  .flip-wrap,.flip-wrap:nth-child(4),.flip-wrap:nth-child(5){grid-column:auto !important}
-
-  /* Revenue Expansion Roadmap — tighten cards on mobile */
-  .dv-card{padding:32px 24px}
-  .dv-n{font-size:44px;margin-bottom:12px}
-  .dv-p{font-size:16px;line-height:1.7}
+  .flip-wrap,
+  .flip-wrap:nth-child(4),
+  .flip-wrap:nth-child(5){grid-column:1 / -1 !important;width:100% !important}
 
   /* Kill 3D entirely — use slide reveal instead */
   .flip-wrap{height:auto !important;perspective:none !important;min-height:0;cursor:pointer}
@@ -808,8 +807,11 @@ a{text-decoration:none;color:inherit}
   .section-hl br{display:none}
 
   /* DV cards: comfortable on mobile */
-  .dv-card{padding:36px 22px}
-  .dv-p{font-size:16px}
+  .dv-grid{grid-auto-rows:min-content}
+  .dv-card{padding:26px 22px}
+  .dv-n{font-size:34px;margin-bottom:6px}
+  .dv-h{font-size:12px;margin-bottom:10px;line-height:1.35}
+  .dv-p{font-size:15px;line-height:1.65}
 
   /* Funnel: horizontal row on mobile, compact */
   .funnel-row{flex-direction:row;gap:0;align-items:flex-start;justify-content:space-between;width:100%}
