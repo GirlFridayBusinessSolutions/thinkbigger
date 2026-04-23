@@ -676,6 +676,7 @@ a{text-decoration:none;color:inherit}
   .pf-cards{grid-template-columns:1fr}
 
   .flip-grid{grid-template-columns:1fr 1fr}
+  .flip-wrap,.flip-wrap:nth-child(4),.flip-wrap:nth-child(5){grid-column:auto}
   .who-cols{grid-template-columns:1fr}
   .who-bottom{flex-direction:column;align-items:flex-start}
 
@@ -694,6 +695,12 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){
   /* Force single column — !important needed because desktop rule loads after */
   .flip-grid{grid-template-columns:1fr !important;gap:12px !important}
+  .flip-wrap,.flip-wrap:nth-child(4),.flip-wrap:nth-child(5){grid-column:auto !important}
+
+  /* Revenue Expansion Roadmap — tighten cards on mobile */
+  .dv-card{padding:32px 24px}
+  .dv-n{font-size:44px;margin-bottom:12px}
+  .dv-p{font-size:16px;line-height:1.7}
 
   /* Kill 3D entirely — use slide reveal instead */
   .flip-wrap{height:auto !important;perspective:none !important;min-height:0;cursor:pointer}
@@ -877,10 +884,12 @@ a{text-decoration:none;color:inherit}
 
 .flip-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(6,1fr);
   gap:16px;
 }
-.flip-wrap{perspective:1100px;height:230px;cursor:pointer}
+.flip-wrap{perspective:1100px;height:230px;cursor:pointer;grid-column:span 2}
+.flip-wrap:nth-child(4){grid-column:2 / span 2}
+.flip-wrap:nth-child(5){grid-column:4 / span 2}
 .flip-inner{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.4,0,.2,1)}
 .flip-wrap:hover .flip-inner,.flip-wrap.flipped .flip-inner{transform:rotateY(180deg)}
 
@@ -1689,36 +1698,32 @@ section + section::before{
         <div class="cs-footer"><span class="cs-status cs-active">Active Partnership — Ongoing</span><span class="cs-since">Since June 2025</span></div>
       </div>
 
-      <!-- CASE STUDY 2 — Placeholder -->
-      <div class="cs-card cs-placeholder fade" style="transition-delay:.16s">
-        <div class="cs-ph-inner">
-          <div class="cs-ph-n">02</div>
-          <p class="cs-ph-txt">Case study coming soon.</p>
+      <!-- CASE STUDY 2 — Alexis -->
+      <div class="cs-card fade" style="transition-delay:.16s">
+        <div class="cs-tag">Dermatology &amp; Skincare</div>
+        <div class="cs-name">Alexis</div>
+        <div class="cs-title">Practice Revenue Expansion &amp; Community Authority System</div>
+        <p class="cs-challenge"><span class="cs-label">The Challenge</span>A loyal patient base and steady referral flow — but revenue was capped by single-visit transactions. No system existed to convert webinar attendees, social followers, or past patients into recurring clients. Founder carrying both clinical and administrative load.</p>
+        <div class="cs-what">
+          <span class="cs-label">What We Built</span>
+          <div class="cs-tags-row"><span class="cs-service">Branding</span><span class="cs-service">Email Marketing</span><span class="cs-service">Social Media</span><span class="cs-service">CRM &amp; Workflows</span><span class="cs-service">Content Strategy</span></div>
         </div>
+        <p class="cs-result"><span class="cs-label">The Shift</span>Expanded a single-service clinical practice into a multi-stream revenue ecosystem — subscription treatment packages, a productized skincare line, and community-driven social groups. Administrative load offloaded so the founder could focus on patient care and growth.</p>
+        <div class="cs-footer"><span class="cs-status cs-active">Active Partnership — Ongoing</span><span class="cs-since">Since 2025</span></div>
       </div>
 
-      <!-- CASE STUDY 3 — Placeholder -->
-      <div class="cs-card cs-placeholder fade" style="transition-delay:.22s">
-        <div class="cs-ph-inner">
-          <div class="cs-ph-n">03</div>
-          <p class="cs-ph-txt">Case study coming soon.</p>
+      <!-- CASE STUDY 3 — Tracy -->
+      <div class="cs-card fade" style="transition-delay:.22s">
+        <div class="cs-tag">Healthcare Leadership &amp; Speaking</div>
+        <div class="cs-name">Tracy</div>
+        <div class="cs-title">Authority Positioning &amp; Speaker Platform Build-Out</div>
+        <p class="cs-challenge"><span class="cs-label">The Challenge</span>Exceptional expertise and a rare career arc from clinician to healthcare technology CEO — but the digital infrastructure had not caught up with the impact. Event planners could not find, evaluate, or book her through the existing site in the 3–5 seconds those decisions require.</p>
+        <div class="cs-what">
+          <span class="cs-label">What We Built</span>
+          <div class="cs-tags-row"><span class="cs-service">Website Conversion</span><span class="cs-service">Brand Positioning</span><span class="cs-service">Speaker Media Kit</span><span class="cs-service">SEO</span><span class="cs-service">Cold Outreach</span></div>
         </div>
-      </div>
-
-      <!-- CASE STUDY 4 — Placeholder -->
-      <div class="cs-card cs-placeholder fade" style="transition-delay:.28s">
-        <div class="cs-ph-inner">
-          <div class="cs-ph-n">04</div>
-          <p class="cs-ph-txt">Case study coming soon.</p>
-        </div>
-      </div>
-
-      <!-- CASE STUDY 5 — Placeholder -->
-      <div class="cs-card cs-placeholder fade" style="transition-delay:.34s">
-        <div class="cs-ph-inner">
-          <div class="cs-ph-n">05</div>
-          <p class="cs-ph-txt">Case study coming soon.</p>
-        </div>
+        <p class="cs-result"><span class="cs-label">The Shift</span>Built a phased three-pillar growth system — foundational assets, scalable infrastructure, and a booking pipeline — repositioning a broad expert into a premium specialist at the intersection of healthcare leadership and advocacy. Authority, visibility, and booking demand now move in lockstep.</p>
+        <div class="cs-footer"><span class="cs-status cs-active">Active Partnership — Ongoing</span><span class="cs-since">Since 2025</span></div>
       </div>
     </div>
 
